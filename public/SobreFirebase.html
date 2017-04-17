@@ -1,0 +1,37 @@
+ <!--
+        Para comenzar a utilizar firebase:
+        0--En la pagina de firebase hay que crear un proyecto nuevo
+        1--Firebase se utiliza con node js. Asi que sino se tiene node hay que instalarlo
+        2--Instalar npm install firebase --save
+        3--Instalar npm install -g firebase-tools
+        4--Luego, en consola hacer firebase init (para que se cree un archivo json)
+        5--Probablemente al tratar de hacer init se pida hacer login, para lo que hay que colocar firebase login,
+           aqui siempre es una ladilla porque a veces dice que no hay servidor xs, hay que intentarlo varias veces honestamente
+           aqui no se como coño se arregla siempre intento, hasta que la pegue.
+        6--Luego, se crea una carpeta public, alli van todos los archivos del proyecto.
+        7--firebase deploy registra los archivos al hosting de firebase.  
+        
+        8--Cada archivo HTML DEBE TENER EL SCRIPT DONDE SE HACE UNA REFERENCIA A LA BASE DE DATOS, Y CON LOS DATOS 
+           DEL PROYECTO CREADO EN LA PAGINA DE FIREBASE, DENTRO DE SE SCRIPT VAN TODAS LAS FUNCIONES Y TODA LA COSA.
+           ESE SCRIPT INICIALIZA FIREBASE, LAS REFERENCIAS A LA BASE DE DATOS Y ES DONDE SE HACE LA CONEXION SIN ESO
+           NO SE PUEDE HACER NADA.
+
+        9--Para Pasar datos desde un formulario html hasta la base de datos de firebase.
+           9.1-- El form debe tener como method="POST"
+           9.2-- El form debe tener (en caso de tener un input type= submit) un onsubmit=nombredelafuncion(argumentos en tal caso)
+           9.3-- Cada input del form debe tener un id, porque en el script se utilizara document.getElementById("id del input").value
+           Ejemplo:
+           <form method="POST" onsubmit=mifuncion(hola,chao,hastaluego)>
+               <input type="text" id="hola">
+               <input type="text" id="chao">             
+               <input type="text" id="hastaluego">
+               <input type="submit" value="click here">
+           </form>  
+           En home.html se tiene un formulario sencillo que agrega un elemento a un arreglo de la base de datos de firebase.
+            
+           Para tener todas las funciones en un archivo aparte:
+
+           1---> al final del body del html poner <script type="text/javascript" src="nombredelarchivo.js"></script> 
+                   Y listo es asi de sencillo!!! En ese archivo se coloca la inicializacion de firebase etc!
+    
+    -->

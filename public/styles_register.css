@@ -1,0 +1,56 @@
+body {
+    background-color: powderblue;
+    background-image:url("https://images.pottermore.com/bxd3o8b291gf/5UwEAONRUkoKiwYukscU8i/c401b2b6d296c1b0496435ca593db89d/HogwartsExpress_PM_HogwartsExpressGoingThroughCountryside_Moment.jpg?w=2560&h=1120&fit=thumb&f=center&q=85");
+
+    
+}
+h1 {
+    color: orange;
+    font-size: 4em;
+    alignment-baseline: central
+}
+h2 {
+    color:red;
+    font-size: 2em;
+    alignment-baseline: central
+}
+label{
+    color: red;
+    alignment-baseline: central;
+    font-size: 2em;
+    font-weight: bold;
+}
+p {
+    color: red;
+}
+table {
+  background-color:purple;  
+  border-spacing: 0.5rem;
+  font-size: 25;
+  color:whitesmoke;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+
+
+input[type=text] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: purple;
+    border: none;
+    width:10%;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
